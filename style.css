@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    margin-top: 100px;
+    background-color: whitesmoke;
+}
+/*=================== Chat List [left] =====================*/
+.left{
+    width: 24%;
+    height: 100%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-right: 1px solid  rgb(236, 234, 234);
+}
+.left .icon{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+}
+.left .chat-list ul{
+    list-style: none;
+    padding: 20px;
+
+}
+.chat-list ul li{
+    padding: 12px 15px;
+    margin: 0 auto;
+}
+li img{
+    width: 23%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50px;
+    float: left;
+}
+li .user{
+    float: left;
+    margin: 0 10px;
+}
+li .user .name{
+    font-size: 15px;
+    font-weight: bold;
+}
+li .user .status,.about .status{
+    font-size: 13px;
+    color: grey;
+}
+.status i{
+    /* align-items: center; */
+    font-size: 10px;
+    color: palevioletred;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.left .chat-list ul li:hover{
+    background-color: rgba(208, 204, 204, 0.856);
+    cursor: pointer;
+}
+li:nth-child(5){
+    width: 100%;
+    background-color: rgba(208, 204, 204, 0.856);
+    
+}
+
+/*===================== Chat now [right] ==============================*/
+.right{
+    width: 76%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.right .top{
+    border-bottom: 2px solid rgb(236, 234, 234);
+    position: relative;
+}
+.right .top img{
+    width: 6%;
+    border-radius: 50%;
+    padding: 10px 6px;
+    margin-left: 10px;
+    float: left;
+}
+.about{
+    margin-top: 11px;
+    float: left;
+}
+.about .user{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.more{
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translate(-0%,-50%);
+}
+.right .chat-his{
+    width: 100%;
+}
+.first-chat{
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+}
+.chat-his .first-chat img{
+    width: 6%;
+    border-radius: 50%;
+    padding: 10px 6px;
+    margin-left: 10px;
+}
+.first-chat .status{
+    display: flex;
+    align-items: center;
+}
+.block-chat1 .message{
+    position: relative;
+    width: fit-content;
+    margin: 0 15px;
+    background-color: rgb(227, 220, 220);
+    padding: 15px;
+    border-radius: 10px;
+}
+.message::after{
+    content: '';
+    position: absolute;
+    top: -19px;
+    left: 14px;
+    width: 20px;
+    border-bottom: 10px solid rgb(227, 220, 220);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+.block-chat2 .thr-chat,.for-chat{
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.block-chat2 .text,.text1{
+    display: flex;
+    justify-content: end;
+}
+.block-chat2 .message1,.message2{
+    position: relative;
+    width: fit-content;
+    margin-right: 20px;
+    margin-top: 15px;
+    background-color: rgb(227, 220, 220);
+    padding: 15px;
+    border-radius: 10px;
+}
+.message1::after{
+    content: '';
+    position: absolute;
+    top: -19px;
+    right: 14px;
+    width: 20px;
+    border-bottom: 10px solid rgb(227, 220, 220);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+.message2::after{
+    content: '';
+    position: absolute;
+    top: -19px;
+    right: 14px;
+    width: 20px;
+    border-bottom: 10px solid rgb(227, 220, 220);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
